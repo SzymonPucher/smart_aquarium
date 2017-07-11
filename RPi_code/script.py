@@ -6,11 +6,11 @@ import time
 import RPi.GPIO as GPIO
 import datetime
 
-from Server_data import get_config
-from Ultrasonic_sensor import sensor
+from server_data import get_config
+from ultrasonic_sensor import sensor
 from stepper_motor import feed
 from blue_motor import change_temp
-from Buzzer import buzzer
+from buzzer import buzz
 
 GPIO.setmode(GPIO.BCM)
 

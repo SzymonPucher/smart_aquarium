@@ -15,7 +15,7 @@ import time
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
 
-def buzzer():
+def buzz():
   GPIO.setup(12, GPIO.OUT)
 
   p = GPIO.PWM(12, 2000)  # channel=12 frequency=2000Hz

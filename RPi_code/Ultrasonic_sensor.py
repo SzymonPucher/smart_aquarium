@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 
-from Buzzer import buzzer
+from buzzer import buzz
 
 def sensor():
   
@@ -36,4 +36,4 @@ def sensor():
   distance = round(distance,2)
   print('Distance from ultrasonic sensor: ', distance, ' cm')
   if distance < 10 and distance > 0:
-    buzzer()
+    buzz()
