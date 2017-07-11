@@ -1,0 +1,4 @@
+Target_day_temperature=22
+Target_night_temperature=22
+Feeding_interv=6
+Now=61
