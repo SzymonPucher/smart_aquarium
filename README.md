@@ -22,13 +22,10 @@ In order to build device connected to aquarium, I collected the hardware, bought
     Stepper motor 28BYJ-48 works very different to Tower SG90 Servo used for temperature changing. This one uses 8-phase sequence of inputs from Raspberry Pi in order to rotate, and needs information about current position to set different one relative current one.
     Ultrasonic sensor and buzzer are used to scare cats from disturbing fishes in the aquarium. If cat tries to get into the aquarium (distance from the sensor will decrease), the cat scare beeper will go off, getting the cat away from the aquarium.
     All components work at the same time, getting configuration from the file on the server, which is modified via mobile application. It is done by infinite loop that downloads configuration from the server and then performs series of operations to apply changes into device components.
-    
- ### Server side of the project:
+    ### Server side of the project
     Server handles one configuration of the Raspberry Pi and components connected to it. The most important part of the server is the configuration file which is accessed and changed by mobile application and Raspberry Pi. All communication between devices is done with this file. 
     Client written in php was created only for to test connection between server and Raspberry Pi, and used until mobile appliation (Android) was created.
-
 ## Authors
-
 * **Szymon Pucher** - *Initial work* - https://github.com/SzymonPucher
 * **Baris Durgun** - *His work is not included in this repository*
 
